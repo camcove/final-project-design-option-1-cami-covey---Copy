@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTC-8"> 
+        <title>Contact | Snowcrest Summit Resort</title>
+        <meta name="author" content="Cami Covey">
+        <meta name="description" content="The contact page for Snowcrest Summit Resort. Includes navigation bar, contact information, and a form for the user to fill out.">
+
+        <!-- Favicon-->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        
+        <!--Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!--CSS Stylesheet-->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body class="contact">
+        <div id="paper">
+            <header>
+                <h1><a href="./index.html">Snowcrest Summit Resort</a></h1>
+
+                <nav class="navbar">
+                    <ul id="navbuttons">
+                        <li><a href="./index.html" class="navbar-links">Home</a></li> <!-- used a relative link to go to home page-->
+                        <li><a href="#">Accommodations</a></li> <!-- do not develop the Accommodations page -->
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main class="grid-container">
+                <h2 class="grid-item-1">Contact Us</h2>
+
+                <p id="text" class="grid-item-2">Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!
+                    Required fields are marked with an (<span style="color:#2F86A6; font-weight:1000">*</span>).</p>
+
+                <img src="images/swiss-peak.jpg" class="grid-item-3" alt="A jagged, snowy mountain of the Swiss Alps is set as the backdrop to a lush green pine forest near a river.">
+
+                <form action="https://wp.zybooks.com/form-viewer.php" method="post" target="_blank" class="grid-item-4">
+
+
+                        <label for="full-name" class="grid-item-5">Full Name<span style="color:#2F86A6; font-weight:1000">*</span></label>
+                        <input type="text" id="full-name" name="full-name" required class="grid-item-6" autocomplete="given-name">
+                    
+                        <label for="email" class="grid-item-5">Email Address<span style="color:#2F86A6; font-weight:1000">*</span></label>
+                        <input type="email" id="email" name="email" required class="grid-item-6" autocomplete="email">
+                    
+                        <label for="phone" class="grid-item-5">Phone Number<span style="color:#2F86A6; font-weight:1000">*</span></label>
+                        <input type="tel" id="phone" name="phone" required class="grid-item-6" autocomplete="tel">
+
+                        <fieldset id="preferred-contact" name="preferred-contact" required>
+                            <legend>Preferred Contact Method</legend>
+
+                            <label for="pref-email" class="mail">Email</label>
+                            <input type="radio" name="contact-pref" id="pref-email" checked>
+                            
+                            <label for="pref-phone" class="telephone">Phone</label>
+                            <input type="radio" name="contact-pref" id="pref-phone">
+                        </fieldset>
+                    
+                        <label for="comments" class="comments">Comments<span style="color:#2F86A6; font-weight:1000">*</span></label>
+                        <textarea id="comments" name="comments" required></textarea>
+                    
+                        <input type="submit" name="button" id="button" value="Submit">
+
+                </form>
+            </main>
+
+            <footer>
+                <p>Copyright&copy; 2023 | Snowcrest Summit Resort</p>
+
+                <p>This site is for educational purposes only.</p>
+            </footer>
+        </div>
+    </body>
+</html>
